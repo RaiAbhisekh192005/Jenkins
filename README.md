@@ -18,18 +18,19 @@ Jenkins requires Java to be installed on your system. OpenJDK is recommended.
 ```
 sudo apt install openjdk-11-jdk
 ```
+
 3. Add Jenkins Repository Key
 Add the repository key to your system to trust packages from the Jenkins repository.
-
-bash
-Copy code
+```
 wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+```
+
 4. Add Jenkins Repository
 Add the Jenkins repository to your system's list of package sources.
-
-bash
-Copy code
+```
 sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+```
+
 5. Update Package Index Again
 After adding the Jenkins repository, update the package index again to include Jenkins packages.
 
