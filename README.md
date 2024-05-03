@@ -1,5 +1,18 @@
 # Jenkins Installation
 
+# Installing Jenkins on Linux
+
+## Prerequisites
+- Ubuntu 20.04 LTS (or any other compatible Linux distribution)
+- sudo access to run commands with root privileges
+
+## Steps
+
+### 1. Update Package Index
+Before installing Jenkins, it's good practice to ensure that your system's package index is up-to-date.
+```bash
+sudo apt update
+
 2. Install Java
 Jenkins requires Java to be installed on your system. OpenJDK is recommended.
 
