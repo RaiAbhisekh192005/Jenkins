@@ -33,34 +33,30 @@ sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sour
 
 5. Update Package Index Again
 After adding the Jenkins repository, update the package index again to include Jenkins packages.
-
-bash
-Copy code
+```
 sudo apt update
+```
 6. Install Jenkins
 Finally, install Jenkins using the following command.
-
-bash
-Copy code
+```
 sudo apt install jenkins
+```
+
 7. Start Jenkins Service
 Once installed, start the Jenkins service.
-
-bash
-Copy code
+```
 sudo systemctl start jenkins
+```
 8. Enable Jenkins Service (Optional)
 If you want Jenkins to start automatically at boot, enable the service.
-
-bash
-Copy code
+```
 sudo systemctl enable jenkins
+```
 9. Grant Root Access to Jenkins User
 To allow the Jenkins user to execute commands with root privileges (optional, but useful for certain configurations), use the usermod command.
-
-bash
-Copy code
+```
 sudo usermod -aG sudo jenkins
+```
 10. Access Jenkins
 You can now access Jenkins in your web browser by navigating to http://your_server_ip_or_domain:8080.
 
