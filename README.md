@@ -10,15 +10,14 @@
 
 ### 1. Update Package Index
 Before installing Jenkins, it's good practice to ensure that your system's package index is up-to-date.
-```bash
+```
 sudo apt update
-
+```
 2. Install Java
 Jenkins requires Java to be installed on your system. OpenJDK is recommended.
-
-bash
-Copy code
+```
 sudo apt install openjdk-11-jdk
+```
 3. Add Jenkins Repository Key
 Add the repository key to your system to trust packages from the Jenkins repository.
 
